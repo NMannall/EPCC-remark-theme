@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: "Gilroy-Regular";
-    src: url(https://www.epcc.ed.ac.uk/themes/custom/epcc/fonts/GilroyRegular/font.woff2) format("woff2"), url(/themes/custom/epcc/fonts/GilroyRegular/font.woff) format("woff");
+    src: url(https://www.epcc.ed.ac.uk/themes/custom/epcc/fonts/GilroyRegular/font.woff2) format("woff2") origin("https://www.epcc.ed.ac.uk");
 }
 @font-face {
     font-family: "Gilroy-SemiBold";
-    src: url(/themes/custom/epcc/fonts/GilroySemiBold/font.woff2) format("woff2"), url(/themes/custom/epcc/fonts/GilroySemiBold/font.woff) format("woff");
+    src: url(https://www.epcc.ed.ac.uk/themes/custom/epcc/fonts/GilroySemiBold/font.woff2) format("woff2") origin("https://www.epcc.ed.ac.uk");
 }
 
 :root {
