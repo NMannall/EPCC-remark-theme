@@ -1,14 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-@font-face {
-    font-family: "Gilroy-Regular";
-    src: url(https://www.epcc.ed.ac.uk/themes/custom/epcc/fonts/GilroyRegular/font.woff2) format("woff2") origin("https://www.epcc.ed.ac.uk");
-}
-@font-face {
-    font-family: "Gilroy-SemiBold";
-    src: url(https://www.epcc.ed.ac.uk/themes/custom/epcc/fonts/GilroySemiBold/font.woff2) format("woff2") origin("https://www.epcc.ed.ac.uk");
-}
-
 :root {
     /* Define UoE/EPCC colours */
     --uoe-blue: #041e42;
@@ -19,7 +10,7 @@
 }
 
 body {
-    font-family: 'Gilroy-Regular';
+    font-family: Gilroy-Regular, Futura, -apple-system, Roboto, Helvetica, Arial, sans-serif;
 }
 
 .remark-slide-content {
@@ -40,6 +31,7 @@ h1 {
     z-index: 10;
     margin-block-start: 0.5em;
     margin-block-end: 0;
+    font-family: Gilroy-Bold, Futura, -apple-system, Roboto, Helvetica, Arial, sans-serif;
 }
 
 a {
