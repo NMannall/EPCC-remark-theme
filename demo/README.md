@@ -45,46 +45,55 @@ See `exercises/eigen/sparse.cpp`
 
 ---
 
-# Exercise: Diffusion equation (sparse)
+# Columns example
 
-There is also a way to implement this example using the sparse matrix interface in eigen.
+.columns[
+  .col[
+    Column 1 (50%)
+  ]
+  .col[
+    Column 2 (50%)
+  ]
+]
 
-Some changes to look out for in the `sparse.cpp` example:
-```C++
-#include <Eigen/Sparse>
-```
-```C++
-std::vector<Eigen::Triplet<double>> fill;
-    fill.reserve(...);
-```
-```C++
-for (int i = 0; i < n - 1; ++i)
-    {
-        fill.push_back(Eigen::Triplet<double>(...);
-        ...
-    }
-```
-```C++
-A.setFromTriplets(fill.begin(), fill.end());
-```
+.columns[
+  .col25[
+    Column 1 (25%)
+  ]
+  .col[
+    Column 2 (50%)
+  ]
+  .col25[
+    Column 3 (25%)
+  ]
+]
 
-See `exercises/eigen/sparse.cpp`
+.columns[
+  .col75[
+    Column 1 (75%)
+  ]
+  .col25[
+    Column 2 (25%)
+  ]
+]
 
----
-# Exercise: Diffusion equation 3 ways
+.columns[
+  .col33[
+    Column 1 (33%)
+  ]
+  .col33[
+    Column 2 (33%)
+  ]
+  .col33[
+    Column 3 (33%)
+  ]
+]
 
-- Use `modules.sh` to load correct environment on ARCHER2
-  
-- Compile the examples using `make`
-  
-- Run each of the three examples explicit, implicit and sparse
-  
-- Generate the movie using the provided python script
-
-To view the movie you will need to either:
-   -  Download the data and generate it locally
-  
-    or
-  
-   - Set up a python virtual environment on ARCHER2 with matplotlib
-   - User `ssh -X` to view graphics
+.columns[
+  .col67[
+    Column 1 (67%)
+  ]
+  .col33[
+    Column 2 (33%)
+  ]
+]
