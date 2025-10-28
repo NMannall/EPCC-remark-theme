@@ -18,12 +18,12 @@ body {
     background-color: var(--offwhite);
 }
 
-h1, h2, h3 {
-    color: var(--epcc-blue);
-    font-weight: bold;
-}
 .remark-code, .remark-inline-code {
     font-family: 'Ubuntu Mono';
+}
+
+h1, h2, h3 {
+    color: var(--epcc-blue);
 }
 
 h1 {
@@ -32,25 +32,23 @@ h1 {
     margin-block-start: 0.5em;
     margin-block-end: 0;
     font-family: Gilroy-Bold, Futura, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Gilroy-Semibold, Futura, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+h3 {
+    font-weight: normal;
 }
 
 a {
     color: var(--epcc-green);
 }
 
-.remark-slide-number {
-    color: var(--epcc-blue);
-    opacity: 1.0;
-}
-
-/* Fix the header and footer bars in position */
-div.header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    text-align: left;
-}
+/* Fix the footer in position */
 div.footer {
     position: fixed;
     bottom: 0px;
@@ -63,6 +61,30 @@ div.footer {
     border-bottom-style: solid;
     border-color: var(--epcc-yellow);
     border-width: 12px;
+}
+
+div.footer p {
+    position: relative;
+    left: 20px;
+    bottom: 8px;
+    font-size: smaller;
+}
+
+/* Align the slide number with the footer */
+.remark-slide-number {
+    color: var(--epcc-blue);
+    opacity: 1.0;
+    bottom: 20px;
+    font-size: smaller;
+}
+
+/* Fix the header in position */
+div.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: left;
 }
 
 /* Place the UoE and EPCC logos */
@@ -78,22 +100,14 @@ div.header img.epcc {
     right: 10px;
 }
 
-div.footer p {
-    position: relative;
-    left: 20px;
-    bottom: 8px;
-    font-size: smaller;
-}
-
-/* Make title box text blue */
-div.titlebox {
-    color: var(--offwhite);
+/* Format the title box */
+div.titlebox h1 {
     background-color: var(--epcc-blue);
+    color: var(--offwhite);
+    padding: 0.2em;
+    margin-bottom: 1.5em;
 }
 
-div.titlebox h1, h2, h3 {
-    color: var(--offwhite);
-}
 /* Fix footnotes box to just above foot box */
 div.footnotes {
     position: fixed;
