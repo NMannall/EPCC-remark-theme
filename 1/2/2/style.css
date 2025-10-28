@@ -1,0 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+:root {
+    /* Define UoE/EPCC colours */
+    --uoe-blue: #041e42;
+    --epcc-blue: #253746;
+    --epcc-yellow: #F0B323;
+    --epcc-green: #009f93;
+    --offwhite: #fffdf3;
+}
+
+body {
+    font-family: Gilroy-Regular, Futura, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.remark-slide-content {
+    /* off white to improve readability */
+    background-color: var(--offwhite);
+}
+
+.remark-code, .remark-inline-code {
+    font-family: 'Ubuntu Mono';
+    line-height: 1;
+}
+
+h1, h2, h3 {
+    color: var(--epcc-blue);
+}
+
+h1 {
+    position: relative;
+    z-index: 10;
+    margin-block-start: 0.5em;
+    margin-block-end: 0;
+    font-family: Gilroy-Semibold, Futura, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+a {
+    color: var(--epcc-green);
+}
+
+/* Fix the footer in position */
+div.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    color: var(--epcc-blue);
+    text-align: left;
+    /* Add EPCC yellow footer */
+    border-bottom-style: solid;
+    border-color: var(--epcc-yellow);
+    border-width: 12px;
+}
+
+div.footer p {
+    position: relative;
+    left: 20px;
+    bottom: 8px;
+    font-size: smaller;
+}
+
+/* Align the slide number with the footer */
+.remark-slide-number {
+    color: var(--epcc-blue);
+    opacity: 1.0;
+    bottom: 20px;
+    font-size: smaller;
+}
+
+/* Fix the header in position */
+div.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Place the UoE and EPCC logos */
+div.header img {
+    height: 40px;
+    top: 10px;
+    position: fixed;
+}
+div.header img.uoe {
+    left: 10px;
+}
+div.header img.epcc {
+    right: 10px;
+}
+
+/* Format the title box */
+div.titlebox h1 {
+    background-color: var(--epcc-blue);
+    color: var(--offwhite);
+    padding: 0.2em;
+    margin-bottom: 1.5em;
+    font-family: Gilroy-Bold, Futura, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Fix footnotes box to just above foot box */
+div.footnotes {
+    position: fixed;
+    bottom: 40px;
+    font-size: smaller;
+}
+
+/* Enable two column layout */
+.columns {
+    display: flex;
+}
+.col {
+    width: 50%;
+    padding: 0 1%;
+    box-sizing: border-box;
+}
+.col33 {
+    width: 33.3%;
+    padding: 0 1%;
+    box-sizing: border-box;
+}
+.col67 {
+    width: 66.6%;
+    padding: 0 1%;
+    box-sizing: border-box;
+}
+.col25 {
+    width: 25%;
+    padding: 0 1%;
+    box-sizing: border-box;
+}
+.col75 {
+    width: 75%;
+    padding: 0 1%;
+    box-sizing: border-box;
+}
+
+
+@page {
+    size: 1210px 681px;
+    margin: 0;
+}
+
+@media print {
+    .remark-slide-scaler {
+	width: 100% !important;
+	height: 100% !important;
+	transform: scale(1) !important;
+	top: 0 !important;
+	left: 0 !important;
+    }
+}
