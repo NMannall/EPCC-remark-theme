@@ -17,7 +17,7 @@ template: titleslide
 Bullet points: 
 - Point 1
 - And another point
-- Final point
+- The final point is a long bit of text that should span multiple lines so long as I add enough waffle.
 
 ---
 # Code block example
@@ -36,6 +36,33 @@ for (int i = 0; i < n - 1; ++i) {
     fill.push_back(Eigen::Triplet<double>(...);
     ...
 }
+```
+```C++
+A.setFromTriplets(fill.begin(), fill.end());
+```
+
+See `exercises/eigen/sparse.cpp`
+
+---
+
+# Exercise: Diffusion equation (sparse)
+
+There is also a way to implement this example using the sparse matrix interface in eigen.
+
+Some changes to look out for in the `sparse.cpp` example:
+```C++
+#include <Eigen/Sparse>
+```
+```C++
+std::vector<Eigen::Triplet<double>> fill;
+    fill.reserve(...);
+```
+```C++
+for (int i = 0; i < n - 1; ++i)
+    {
+        fill.push_back(Eigen::Triplet<double>(...);
+        ...
+    }
 ```
 ```C++
 A.setFromTriplets(fill.begin(), fill.end());
